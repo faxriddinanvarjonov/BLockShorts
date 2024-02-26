@@ -1,0 +1,9 @@
+#dismissible{
+    display: none ;
+}
+a[title = "Shorts"]{
+    display: none !important;
+}
+#shorts-container{
+    display: none !important;
+}
