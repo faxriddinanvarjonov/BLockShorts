@@ -1,9 +1,9 @@
-#dismissible{
-    display: none ;
+#dismissible {
+  display: none;
 }
-a[title = "Shorts"]{
-    display: none !important;
+a[title="Shorts"] {
+  display: none !important;
 }
-#shorts-container{
-    display: none !important;
+#shorts-container {
+  display: none !important;
 }

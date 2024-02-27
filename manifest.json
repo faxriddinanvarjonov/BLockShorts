@@ -1,18 +1,20 @@
 {
-    "name": "Disable Youtube Shorts",
-    "description": "By Fahriddin",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-      "default_popup": "index.html",
-      "default_icon": "birdHouse.png"
+  "name": "Disable Youtube Shorts",
+  "description": "By Fahriddin",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "birdHouse.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["index.css"]
     },
-    "content_scripts":[{
-      "matches":["https://www.youtube.com/*"],
-      "css":["index.css"]
-    },{
-      "matches":["https://www.youtube.com/shorts/*"],
-      "js":["index.js"]
-    }]
-
-  }
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
